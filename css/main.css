@@ -1,0 +1,234 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Arial ,"Times New Roman",monospace ;
+}
+.navbar{
+    width:100%;
+    height:10vh;
+    background-color:white;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items:center;
+}
+.companyName{
+    margin-right:50px;
+}
+.navbar .links a{
+    text-align:center;
+    text-decoration:none;
+    color:black;
+    font-size:0.9em;
+    display:inline-block;
+    width:80px;
+}
+.navbar .links a:hover{
+    color:blue;
+    border-bottom: 2px solid blue ;
+}
+.header{
+    background-image: url("../images/1.jpg");
+    width:100%;
+    height:500px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin-bottom:20px;
+}
+.header p{
+    width:40%;
+    margin:20px 0px;
+}
+.header h1{
+    font-size:2.5em;
+    margin-bottom:30px;
+}
+.header button{
+    background-color:black;
+    color:white;
+    width:130px;
+    height:50px;
+    text-transform: uppercase;
+    font-size:1.1em;
+    border-radius:3px;
+}
+.header button:hover{
+    background-color:white;
+    color:blue;
+}
+.section{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+}
+.section h2{
+    font-size:2em;
+    color:#3297a8;
+    margin:10px 0px;
+}
+.section p{
+    margin:20px 0px;
+    width:50%;
+}
+.images h2{
+    font-size:2em;
+    color:#3297a8;
+}
+.images{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+.box{
+    width:20%;
+    margin:0px 30px 50px 30px;
+}
+.box h2{
+    text-align:center;
+}
+.box p{
+    text-align:left;
+}
+.icon{
+    text-align:center; 
+}
+.icon img{
+    width:100px;
+    height:80px;
+}
+footer{
+    width:100%;
+    height:100px;
+    background-color:#3297a8;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+footer p{
+    text-align:center;
+}
+/****Toggle Ico****/
+
+.toggle img{
+    width:50px;
+    height:50px;
+}
+.toggle{
+    width:30px;
+    height:auto;
+    position:absolute;
+    left:20px;
+    display:none;
+}
+ /****Medium device***/
+@media (max-width:785px) and (min-width:490px){
+    .toggle{
+        position:absolute;
+        display:inline;
+        left:15px;
+        top:5px;
+    }
+    .links{
+        display:none;
+    }
+    .images{
+        flex-flow:row wrap;
+        
+      }
+    .images h2{
+        font-size:1.2em;
+    }
+    .images .box{
+        width:50%;
+    }
+}
+
+/****small devices***/
+@media (max-width:489px)and (min-width:265px){
+    .toggle{
+        position:absolute;
+        display:inline;
+        left:15px;
+        top:5px;
+    }
+    .navbar .companyName{
+        
+        margin-left:25%;
+        margin-right:5px;
+    }
+    .companyName h1{
+        font-size:1.2em;
+    }
+    .links{
+        display:none;
+    }
+    .images{
+        flex-flow:row wrap;
+        
+      }
+    .images h2{
+        font-size:1.2em;
+    }
+    .images .box, .section p{
+        width:70%;
+    }
+    .header p{
+       /* height:150px;
+       /* overflow:scroll;*/
+        width:70%;
+    }
+    .section p .images p{
+        font-size:16px;
+    }
+}
+
+
+/***Extra small devices**/
+@media (max-width:264px){
+    .toggle{
+        position:absolute;
+        display:inline;
+        left:15px;
+        top:5px;
+    }
+    .navbar .companyName{
+        display:none;
+    }
+    .header h1{
+        font-size:2em;
+    }
+    .links{
+        display:none;
+    }
+    .images{
+        flex-flow:row wrap;
+        
+      }
+    .images h2{
+        font-size:1.2em;
+    }
+    .images .box{
+        width:50%;
+    }
+    .header p{
+        font-size:14px;
+        width:50%;
+       /* height:150px;
+        overflow:scroll;*/
+    }
+    .section p, .section h2, .images p, .images h2{
+        font-size:12px;
+    }
+    .icon img{
+        width:50px;
+        height:50px;
+    }
+    .section p, .images .box{
+        width:80%;
+    }
+}
